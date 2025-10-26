@@ -6,13 +6,14 @@
   ==================================================================
 -->
 
-This is my journal of the design and building process of **Interactive Game ESP32**.  
-You can view this journal in more detail on **Hack Club Blueprint** [here](https://blueprint.hackclub.com/projects/26).
-
-
 ## 10/4/2025 - Connected the display to the esp32   
 
 So I'm really new to hardware and I've a 0.96 inch display which i can use wtih the ESP32 i tried it before but seems like the pin were not present </3 so i soldered some copper wire to it and surprisingly it works with the female jumper wires! printed hello world on it![1st Log.jpeg](https://blueprint.hackclub.com/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjgxLCJwdXIiOiJibG9iX2lkIn19--ee0eaf78b3b8137f44aac0e13928b0ce777d1df1/1st%20Log.jpeg)
 
+  
+
+## 10/26/2025 - Created a simple car lane changer game with buttons!  
+
+So i added two buttons the display and the esp 32 together and coded it to be left and right (fixed the ground to the breadboard and use male to female to connect it to the esp32) and then connected the display with the vcc gnd sda and scl to the esp32 did the connections and um yeah wrote some code added a stationary car as us which we could control we can change lanes using left and right buttons (maybe ill add a buzzer) and the non stationary objects (which are just rectangles) come with a speed we have to avodi them and score goes up a gameover screen and it loops! ![WhatsApp Image 2025-10-26 at 4.59.02 PM](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTY5NiwicHVyIjoiYmxvYl9pZCJ9fQ==--f985f11e197f54115a4fcd4620900cdc00dbf393/WhatsApp%20Image%202025-10-26%20at%204.59.02%20PM.jpeg)
   
 
