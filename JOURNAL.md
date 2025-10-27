@@ -17,3 +17,37 @@ So I'm really new to hardware and I've a 0.96 inch display which i can use wtih 
 So i added two buttons the display and the esp 32 together and coded it to be left and right (fixed the ground to the breadboard and use male to female to connect it to the esp32) and then connected the display with the vcc gnd sda and scl to the esp32 did the connections and um yeah wrote some code added a stationary car as us which we could control we can change lanes using left and right buttons (maybe ill add a buzzer) and the non stationary objects (which are just rectangles) come with a speed we have to avodi them and score goes up a gameover screen and it loops! ![WhatsApp Image 2025-10-26 at 4.59.02 PM](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTY5NiwicHVyIjoiYmxvYl9pZCJ9fQ==--f985f11e197f54115a4fcd4620900cdc00dbf393/WhatsApp%20Image%202025-10-26%20at%204.59.02%20PM.jpeg)
   
 
+## 10/27/2025 - Completed the Game Emulator with buzzers lights and buttons!  
+
+So wrote the code first (Updated on Github) it is a esp game emualator thingy with 4 games in the menu SNAKE PONG CAR RACE and DINO pretty simple i also added the eyes animation when it boots up with a hello message and a loading animation for the menu [Code](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjAxNiwicHVyIjoiYmxvYl9pZCJ9fQ==--71f5a4151c2586b2fa0e050f065a745d2ced0714/Code.mp4) [more code](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjAxNywicHVyIjoiYmxvYl9pZCJ9fQ==--4b8a8bb71f7c946049a18a74293351a47e6e9623/more%20code.mp4)
+
+
+the connections are as follows 
+ OLED Display (I2C)                 
+   VCC → 3.3V                       
+   GND → GND                        
+   SDA → GPIO 21                    
+   SCL → GPIO 22                    
+ Buttons (to GND when pressed)      
+   UP     → GPIO 32                 
+   DOWN   → GPIO 33                 
+   LEFT   → GPIO 25                 
+   RIGHT  → GPIO 26                
+   SELECT → GPIO 27                 
+                                    
+ Buzzer                             
+   (+) → GPIO 18                    
+   (-) → GND                        
+                                    
+ Green LED (with 220Ω resistor!)    
+   (+) → GPIO 19                    
+   (-) → 220Ω → GND    
+[buzzer and light](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjAxOCwicHVyIjoiYmxvYl9pZCJ9fQ==--68ea1b90cf77ea3a43f4702e3e681c508afcbfb6/buzzer%20and%20light.mp4)
+
+![wiring](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjAxOSwicHVyIjoiYmxvYl9pZCJ9fQ==--857209124b69302f06af3a064c8eb88839a4cf49/wiring.jpeg)[Light](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjAyMCwicHVyIjoiYmxvYl9pZCJ9fQ==--8cceb75dde0ae45143449b25b9edb121581acef6/Light.mp4)[menu and buzzer](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjAyMSwicHVyIjoiYmxvYl9pZCJ9fQ==--0f7cb1862ffd407bdabee33c2ccc7b1194ae8795/menu%20and%20buzzer.mp4)
+
+
+I'll update everything on GitHub tmrw ig
+
+  
+
