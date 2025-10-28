@@ -51,3 +51,8 @@ I'll update everything on GitHub tmrw ig
 
   
 
+## 10/28/2025 - Created Final Repo Polished the Projects and added BOM.csv  
+
+So the project is done i created the BOM.csv (2 Actually one for international links amazon.com etc and other local shipping) this project can be done in 8-9$ margin easily ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjI0NCwicHVyIjoiYmxvYl9pZCJ9fQ==--efb7d2411a2a8b1c514181603df90939d5b6ea78/image.png) here is the drive link for all the assetshttps://drive.google.com/drive/folders/10nQiTgZ9VRWo2Ry4HvKti-WEHZzETjhn?usp=drive_link and ig thats it 
+  
+
