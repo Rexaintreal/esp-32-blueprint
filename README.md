@@ -1,9 +1,15 @@
 # ESP32 Game Console
 An interactive game console built on ESP32 with a 0.96 inch OLED display! Features 4 classic games with sound effects, visual feedback, and smooth gameplay.
 
+![Demo](assets/demo.gif)
+
 ## Overview
 
 So basically this project turns an ESP32 into a handheld gaming device. It includes a startup animation with blinking eyes, a menu system, and four fully playable games - Snake, Pong, Race (Lane Changer), and Dino. The console uses physical buttons for controls, an active buzzer for sound effects, and a Green LED for visual feedback.
+
+## Why I Made This
+
+I wanted to create a fun, portable gaming device that brings back the nostalgia of classic games while learning about hardware interfacing. (Ive never done smth like this before) This project helped me understand how to work with displays, buttons, and sound in embedded systems. Plus, it's something I can actually use and show off to friends. It's also my first real hardware project and I learned sm liek soldering all the wires using jumper wires It may sound really basic but im really new to hardware and stuff
 
 ## Hardware Components
 
@@ -17,6 +23,8 @@ So basically this project turns an ESP32 into a handheld gaming device. It inclu
 - Jumper Wires (Male-to-Male, Male-to-Female)
 
 ## Pin Connections
+
+![Wiring Diagram](assets/wiring.jpeg)
 
 ### OLED Display (I2C)
 ```
@@ -34,26 +42,27 @@ LEFT   → GPIO 25
 RIGHT  → GPIO 26
 SELECT → GPIO 27
 ```
+
 ### Buzzer
 ```
 (+) → GPIO 18
 (-) → GND
 ```
 
-### LED (with 220Ω resistor so it dosent blow up or smth)
+### LED (with 220Ω resistor so it doesn't blow up or smth)
 ```
 (+) → GPIO 19
 (-) → 220Ω → GND
 ```
 
 ## Required Libraries 
-(hOPING YOU ALREADDY HAVE THE ESP THING SET UP IN THE IDE If not check below)
+(HOPING YOU ALREADY HAVE THE ESP THING SET UP IN THE IDE If not check below)
+
 Install these libraries through the Arduino IDE Library Manager:
 
 1. **Wire** (Built-in with Arduino IDE)
 2. **Adafruit GFX Library** by Adafruit
 3. **Adafruit SSD1306** by Adafruit
-
 
 ### Installation Steps
 
@@ -77,7 +86,7 @@ Install these libraries through the Arduino IDE Library Manager:
    - Tools → Board → ESP32 Arduino → ESP32 Dev Module 
    - Tools → Port → (Select your COM port)
 
-4. Open the `espgame.ino` file
+4. Open the `Firmware/espgame.ino` file
 
 5. Click Upload button (→)
 
@@ -123,7 +132,7 @@ Classic DINO Game uses UP and Down button only for obstacles
 
 **No sound from buzzer:**
 - Check buzzer polarity
-- Try swaping buzzer wires
+- Try swapping buzzer wires
 - Some buzzers need external oscillation circuit
 
 **LED not lighting:**
@@ -138,6 +147,23 @@ Classic DINO Game uses UP and Down button only for obstacles
 3. Keep wires short to reduce noise and interference
 4. Test each component individually before assembling everything 
 5. Use heat shrink tubing or electrical tape to secure exposed connections (If any)
+
+## Bill of Materials
+
+| Item | Description | Quantity | Unit Price ($) | Total Price ($) |
+|------|-------------|----------|----------------|-----------------|
+| ESP32 Dev Board | ESP32 microcontroller development board | 1 | 3.99 | 3.99 |
+| 0.96" OLED Display | 128x64 I2C OLED Display | 1 | 1.99 | 1.99 |
+| Push Buttons | 4-pin tactile push buttons | 5 | 0.13 | 0.70 |
+| Active Buzzer | 5V active buzzer module | 1 | 0.20 | 0.20 |
+| Green LED | 5mm LED | 1 | 0.01 | 0.01 |
+| 220Ω Resistor | 1/4W resistor | 1 | 0.01 | 0.01 |
+| Breadboard | 400 point breadboard | 1 | 0.60 | 0.60 |
+| Jumper Wires M-M | Male-to-Male pack | 1 | 0.20 | 0.20 |
+| Jumper Wires M-F | Male-to-Female pack | 1 | 0.20 | 0.20 |
+| **TOTAL** | | | | **$7.90** |
+
+For detailed sourcing information, see `BOM.csv` in the repository.
 
 ## Acknowledgements
 
